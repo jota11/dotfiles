@@ -1,0 +1,33 @@
+[core]
+	editor = code --wait
+[gpg]
+	program = "C:\\Program Files\\Git\\usr\\bin\\gpg.exe"
+[user]
+	signingkey = F633AA0F86DD6E2B
+	name = jota11
+	email = jotarjotinha@gmail.com
+[github]
+	user = jota11
+[commit]
+	gpgsign = true
+[init]
+  defaultBranch = main
+[pull]
+	ff = only
+[alias]
+	# Log Last CoMmit
+	llcm = log -1
+	# Log Last Commit Detailed -- lpd = log --patch -1
+	llcmd = log --patch -1
+	# Log All Commits Detailed -- lpda = log --patch .
+	lacmd = log --patch .
+	# Log All Commits Messages
+	lacmmsg = log --oneline --decorate
+	# Log All Commits with full detail
+	lacmfd = log --patch --oneline --decorate
+	# Status
+	st = status --ignore-submodule=untracked
+	# Pull Fast-Forward
+	pff = pull --ff-only
+	# CoMmit
+	cm = commit -m
